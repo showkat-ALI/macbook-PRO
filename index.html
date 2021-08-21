@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- ---------------------- Bootstrap---------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- css -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <section class="container">
+            <div class=" mb-3">
+                <div class="row g-0 justify-content-evenly">
+                    <!-- ------------------------------- Product Image ----------------------------------->
+                  <div class="col-md-4">
+                    <img src="images/mac.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <!-- ----------------------------------- Product description ----------------------------->
+                  <div class="col-md-6">
+                    <div class="card-body">
+                      <h1 class="card-title">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
+                      <p class="card-text">Apple MacBook Pro is a macOS laptop with a 13.30-inch display that has a resolution of 2560x1600 pixels. It is powered by a Core i5 processor and it comes with 12GB of RAM. The Apple MacBook Pro packs 512GB of SSD storage.</p>
+                   <!-- ---------------------------------------- Memory ------------------------------------------>
+
+                      <p class="card-text fw-bold mt-5">Memory</p>
+
+                      <button id="ram-first-Option" type="button" class="btn btn-outline-secondary">8GB unified memory</button>
+                      <button id="ram-second-Option" type="button" class="btn btn-outline-secondary">16GB unified memory</button>
+                      <!-- ----------------------------------------- Storage ------------------------------------------->
+
+                      <p class="card-text fw-bold mt-5">Storage</p>
+
+                      <button id='ssd-first-option' type="button" class="btn btn-outline-secondary">256GB SSD storage</button>
+                      <button id='ssd-second-option' type="button" class="btn btn-outline-secondary">512GB SSD storage</button>
+                      <button id='ssd-third-option' type="button" class="btn btn-outline-secondary">1TB SSD storage</button>
+                      <!-------------------------------------------- Delivery Option ---------------------------------------->
+
+                      <p class="card-text fw-bold mt-5">Choose your delivery option</p>
+
+                      <button id="free-shipping" type="button" class="btn btn-outline-secondary">Friday, Aug 25 FREE prime Delivery</button>
+                      <button id="paid-shipping" type="button" class="btn btn-outline-secondary">Friday, Aug 21 Delivery charge $20</button>
+                    <!-- ----------------------------- Cost counting --------------------------------->
+
+                    <table class="table caption-top w-50 my-5 fw-bold">
+                        
+                      <tbody>
+                        <tr>
+                          <td>
+                            <p class="showcase-field">Best Price</p>
+                          </td>
+                          <td>
+                             <p>$ <span id= 'bestTotal'>1299</span></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="showcase-field">Extra memory cost</p>
+                          </td>
+                          <td>
+                            <p>$ <span id="ram-price">0</span></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="showcase-field">Extra Storage cost</p>
+                          </td>
+                          <td>
+                            <p>$ <span id="ssdfield">0</span></p>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <p class="showcase-field">Delivery charge</p>
+                          </td>
+                          <td>
+                            <p>$ <span id="shipping-cost">0</span></p>
+                          </td>
+                        </tr>
+                        <tfoot>
+                        <tr>
+                          <td>
+                            <p class="showcase-field">Total price</p>
+                          </td>
+                          <td>
+                            <p>$ <span id="mac-total-price">1299</span></p>
+                          </td>
+                        </tr>
+                      </tfoot>
+                    </tbody>
+
+                  </table>
+                    <p class="fw-bold">Add promo code</p>
+                    <div class="d-flex">
+                        <input id="discountCode" type="text">
+                        <button id="discount-btn" type="button" class="btn btn-danger">Apply</button>
+                    </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+              <h1 class="text-center">Total: $ <span id="grand-total">1299</span></h1>
+          </section>
+
+    </header>
+    <!-- ------------------------------------ Js linking ----------------------------- -->
+    <script src="js/logic.js"></script>
+</body>
+</html>
